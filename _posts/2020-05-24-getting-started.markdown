@@ -43,6 +43,8 @@ FHIR (or <i>Fast Healthcare Interoperability Resources</i>) is a standard for ex
 The objectives of the project are as follows:
 
 - <span style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6">Adding implementation for the remaining search parameters for the most useful resources including Location, Observation, Encounter, DiagnosticReport, Patient, Person etc.
+- <span style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6">Adding implementation for common search parameters including _id and _lastUpdated.
+- <span style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6"> Adding paging functionality to resources which do not support it currently.
 - <span style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6">Implementing the advanced search parameters like _include, _elements and _summary which let you search in a more specific manner.
 - <span style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6">Adding support for Lucene indices available for certain resources by implementing LuceneQuery instead of CriteriaQuery.
 - <span style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6">Integrating the module with GraphQL as a stretch goal.
