@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "GSoC 2020 at OpenMRS | Week 1"
+date:   2020-06-07 22:00:00 +0530
+---
+
+<br/>
+
+<img src="/assets/images/gsoc_openmrs.png" style="width:auto; height:250px; position:relative; left:5%;">
+
+<br />
+<div style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6;">
+After a month-long community bonding period, the coding period finally commenced. I was really eager to start contributing to my project and I worked on a few tickets as per the discussions with my mentor. As the first week of the coding period for Google Summer of Code 2020 is about to end, I'd like to share my experience during the same. 
+
+<br /> <br />
+This past week, I worked on implementing paging for some of the resources in the FHIR v2 module. Earlier, the search API returned all the resources matching a specified search criteria at once. The main aim of implementing paging is to limit the number of returned resources on a particular page (ex: returning 20 results on one page), along with the links for the previous and the next pages. This would make the search more efficient by retrieving results only as per the need and avoid unnecessary disc reads and writes. 
+
+<br/> <br /><br />
+<h2><b> Tickets worked on during Week 1</b></h2>
+I worked on four tickets related to implementing paging and the JIRA tickets for them are as follows:
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-166" style="color:black">Implement paging for Encounter resource (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-168" style="color:black">Implement paging for Location resource (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-167" style="color:black">Implement paging for AllergyIntolerance resource (Status: Code review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-203" style="color:black">Implement paging for DiagnosticReport resource (Status: Code review)</a></li>
+</u></ul><br/>
+
+Apart from working on tickets, I also found out a few bugs in the codebase related to paging in Observation resource, Person Name handling in BaseDao and some improvements to remove hardcoding of constants in unit test classes. I'll take them up in the next week after initial discussions with my project mentor.
+
+<br/> <br /><br />
+<h2><b> Challenges faced</b></h2>
+With a lot of active development, come issues and solutions to them. I faced some minor issues while working on the tickets during week 1, which I was able to resolve myself or with the help of my mentor. 
+<ul style="font-size: 17px;">
+<li style="padding: 10px 0px;">The datasets defined for testing of the resources (present in the test folder) were getting mixed with the standard dataset. The attributes of resources in both the datasets with the same uuid were mixing randomly leading to problems while testing code. I solved it by altogether skipping to load the standard dataset. Ian advised me to place a <b>@SkipBaseSetup</b> annotation on top of the test class and execute the <b>INITIAL_XML_DATASET_PACKAGE_PATH</b> which skipped the standard dataset.</li>
+<li style="padding: 10px 0px;">The other issue that I went through was while implementing paging unit tests for AllergyIntolerance resource. The resource used <b>GlobalPropertyService</b> in dao layer and the translators. I faced a challenge mocking it because the getter on AllergyIntoleranceDaoImpl had access from the same package only. I resolved it by changing the access restriction to <b>PUBLIC</b>, though I would need to discuss this with Ian to see if that's alright. </li>
+</ul><br/>
+
+<h2><b> Plan for Week 2</b></h2>
+In the next week, I'll focus on implementing paging for the remaining resources. I will hopefully be able to complete paging for all resources by the end of the next week. I'll also look into the bugs and improvements I found out during Week 1. The JIRA tickets for the next week are:
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-205" style="color:black">Implement paging for Medication resource</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-206" style="color:black">Implement paging for Condition resource</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-204" style="color:black">Implement paging for Practitioner resource</a></li>
+</u></ul><br/>
+
+This is pretty much I have for now. See you next week!
+
+</div>
