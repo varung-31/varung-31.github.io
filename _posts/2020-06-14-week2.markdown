@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "GSoC 2020 at OpenMRS | Week 2"
+date:   2020-06-14 21:00:00 +0530
+---
+
+<br/>
+<div style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6;">
+The second week of the coding period for GSoC'20 was an exciting one with a lot of work done and some challenges faced during the way. The second week began on 8th June and is about to end today, i.e. 14th June. This week, I worked on implementing paging for a few resources and the FHIR v2 module is on the verge of having paging functionality for all the resources it currently supports.
+
+<br /> <br />
+
+<figure>
+<img src="/assets/images/week2.jpg" style="width:auto; height:450px; position:relative; left:8%;"><figcaption style="text-align:center; font-size:16px">My workspace</figcaption>
+</figure>
+
+<br /> <br />
+<h2><b> Challenges Faced</b></h2>
+As is always the case, bugs and blockers don't tend to leave developers. There were not many issues during the week, but there is one that is still left to be dealt with. The query to search Medication resource by the ingredient code was not working as expected and joining the Concept table twice. I validated it by putting logs and have still not been able to come up with a fix. Apart from this, there were not any major issues, though I found a major bug in the code base for FHIR v2, which I'll discuss with my mentor and rectify it in the next week.
+
+<br /> <br /><br />
+<h2><b> Tickets worked on during Week 2</b></h2>
+I worked on five issues related to implementing paging and the JIRA tickets for them are as follows:
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-165" style="color:black">Implement paging for Person resource (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-204" style="color:black">Implement paging for Practitioner resource (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-206" style="color:black">Implement paging for Condition resource (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-227" style="color:black">Implement paging for ServiceRequest resource (Status: Code review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-205" style="color:black">Implement paging for Medication resource (Status: In progress)</a></li>
+</u></ul><br/>
+
+
+<h2><b> Plan for Week 3</b></h2>
+There is still some paging work left for a couple of resources namely, FhirTask and RelatedPerson. After the paging issues, I'll continue to work on the bugs I found out in the codebase and they would take me atleast two days to resolve. And I have an issue under my belt to improve the search for the Practitioner resource. And finally, I'd deep dive into the query issue for Medication resource and try to come up with a fix. That is the plan for the next week, though completing everything looks a little uncertain. The JIRA tickets for the paging and search issues are as follows:
+<br /> <br />
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-205" style="color:black">Resolve the Criteria query issue for Medication resource</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-229" style="color:black">Implement paging for FhirTask resource</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-226" style="color:black">Implement paging for RelatedPerson resource</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-228" style="color:black">Improve search for Practitioner resource</a></li>
+</u></ul><br/>
+
+That's all I have for now. See you next week!
+
+
+</div>

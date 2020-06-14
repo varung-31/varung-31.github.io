@@ -21,8 +21,8 @@ I worked on four tickets related to implementing paging and the JIRA tickets for
 <ul style="font-size: 19px;"><u>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-166" style="color:black">Implement paging for Encounter resource (Status: Merged)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-168" style="color:black">Implement paging for Location resource (Status: Merged)</a></li>
-<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-167" style="color:black">Implement paging for AllergyIntolerance resource (Status: Code review)</a></li>
-<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-203" style="color:black">Implement paging for DiagnosticReport resource (Status: Code review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-167" style="color:black">Implement paging for AllergyIntolerance resource (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-203" style="color:black">Implement paging for DiagnosticReport resource (Status: Merged)</a></li>
 </u></ul><br/>
 
 Apart from working on tickets, I also found out a few bugs in the codebase related to paging in Observation resource, Person Name handling in BaseDao and some improvements to remove hardcoding of constants in unit test classes. I'll take them up in the next week after initial discussions with my project mentor.

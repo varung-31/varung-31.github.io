@@ -52,6 +52,10 @@ On the coding side, I got my hands dirty on various issues in the FHIR module. W
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-204" style="color:black">Practitioner</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-205" style="color:black">Medication</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-206" style="color:black">Condition</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-226" style="color:black">RelatedPerson</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-227" style="color:black">ServiceRequest</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-229" style="color:black">FhirTask</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-165" style="color:black">Person</a></li>
 </ul></li></u>
 </ul>
 
