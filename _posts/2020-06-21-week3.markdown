@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "GSoC 2020 at OpenMRS | Week 3"
+date:   2020-06-21 20:00:00 +0530
+---
+
+<br/>
+
+<img src="/assets/images/week3" style="width:auto; height:250px; position:relative; left:20%;">
+
+<br />
+<div style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6;">
+The third week of the coding period for GSoC'20 was a very smooth one. The week began on 15th June and ends today i.e. 21st June. There were no major challenges faced during the week and I instead made a lot of bug fixes to the codebase of the FHIR v2 Module. I was able to resolve one of the blockers from Week 2, leaving me with no blocked issues at the moment. Also, the paging work is now almost complete (just a couple of tickets waiting to be merged). All the resources, which have a resource provider, support paging of search results now. I will now shift focus on improving search for some resources and on implementing the common search parameters. 
+
+<br /> <br />
+<h2><b> Blockers Resolved</b></h2>
+During week 2, I faced a major blocker while implementing paging for the Medication resource. The query for joining the Drug table to the Concept table via the DrugIngredient table was not working as expected and joining the Concept table twice leading to ambiguous column name error. Even after looking deeper into the issue and trying out several things, I could not solve the issue with that approach. So, I used DetachedCriteria to generate the query in a different format which avoided joining the DrugIngredient table to the Concept table and it worked smoothly. 
+
+<br /> <br /><br />
+<h2><b> Tickets worked on during Week 3</b></h2>
+I worked on five issues related to implementing paging and certain bug fixes. The JIRA tickets for them are as follows:
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-229" style="color:black">Implement paging for Task resource (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-233" style="color:black">Add support for OR'ing References (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-236" style="color:black">Ensure criteria are added to search for Observation (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-226" style="color:black">Implement paging for RelatedPerson resource (Status: Code review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-205" style="color:black">Implement paging for Medication resource (Status: Code review)</a></li>
+</u></ul><br/>
+
+
+<h2><b> Plan for Week 4</b></h2>
+With the paging work complete and the bugs fixed as well, I'll work on improving the search for the Practitioner resource. I also have a ticket to ensure that search results returned as part of a query are distinct in nature. Currently, the way we are handling names in a query returns multiple instances of the same resource because of the joins between tables. The way to resolve this is to change the paging structure a bit and store only the distinct UUIDs of the resources. I'll work on implementing this approach in week 4. Additionally, I'll work on adding the functionality for common search parameters like _id and _lastUpdated. The JIRA tickets for the these issues are as follows:
+<br /> <br />
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-234" style="color:black">Ensure search returns unique results</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-228" style="color:black">Improve Search for Practitioner resource</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-169" style="color:black">Add search for _id and _lastUpdated</a></li>
+</u></ul><br/>
+
+Hoping for another great week ahead!
+
+</div>

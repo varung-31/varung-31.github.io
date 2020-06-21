@@ -25,7 +25,7 @@ I worked on five issues related to implementing paging and the JIRA tickets for 
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-165" style="color:black">Implement paging for Person resource (Status: Merged)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-204" style="color:black">Implement paging for Practitioner resource (Status: Merged)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-206" style="color:black">Implement paging for Condition resource (Status: Merged)</a></li>
-<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-227" style="color:black">Implement paging for ServiceRequest resource (Status: Code review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-227" style="color:black">Implement paging for ServiceRequest resource (Status: Merged)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-205" style="color:black">Implement paging for Medication resource (Status: In progress)</a></li>
 </u></ul><br/>
 
