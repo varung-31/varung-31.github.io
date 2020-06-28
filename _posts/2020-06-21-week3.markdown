@@ -23,8 +23,8 @@ I worked on five issues related to implementing paging and certain bug fixes. Th
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-229" style="color:black">Implement paging for Task resource (Status: Merged)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-233" style="color:black">Add support for OR'ing References (Status: Merged)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-236" style="color:black">Ensure criteria are added to search for Observation (Status: Merged)</a></li>
-<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-226" style="color:black">Implement paging for RelatedPerson resource (Status: Code review)</a></li>
-<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-205" style="color:black">Implement paging for Medication resource (Status: Code review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-226" style="color:black">Implement paging for RelatedPerson resource (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-205" style="color:black">Implement paging for Medication resource (Status: Merged)</a></li>
 </u></ul><br/>
 
 

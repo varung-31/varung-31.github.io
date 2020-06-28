@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "GSoC 2020 at OpenMRS | Week 4"
+date:   2020-06-28 20:00:00 +0530
+---
+
+<br/>
+
+<img src="/assets/images/week4.jpg" style="width:auto; height:250px; position:relative; left:15%;">
+
+<br />
+<div style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6;">
+The fourth week of the coding period for GSoC'20 was not a straightforward one. There were a few changes in the design for implementing some of the features and will be discussed in detail. The week began on 22nd June and ends today i.e. 28th June. With the end of this week, the phase 1 of the coding period is complete and the student/mentor evaluations for the same are due. As per the plan, most of the tickets and issues discussed for Phase 1 have been completed and an issue to implement _id and _lastUpdated search parameters is in progress.
+
+<br /> <br /> <br />
+<h2><b> Challenges Faced</b></h2>
+There were a few challenges in the issues worked on during this week. I had a few discussions with my mentor, Ian Bacher, and we were able to resolve them by modifying the already planned implementation strategies. The issues were:
+<ul style="font-size: 17px;">
+<li style="padding: 10px 0px;"><b>Implementing common search params:</b>
+<br /><br />
+The earlier plan was to implement the common search parameters like _id and _lastUpdated using an interceptor where we would examine the RequestDetails parameter. If any of _id or _lastUpdated were present, we would set an attribute in the RequestDetails parameter and access the same in the resource provider. This way we would not have to mention an explicit @OptionalParam in the resource providers for every search parameter. 
+<br /><br />
+But the reality is often disappointing. While adding functionality for the interceptor, I figured out that _id cannot be used without specifying it as an explicit @OptionalParam, maybe because of the way it has been handled in the HAPI FHIR library. Also, if we used interceptor, we would have to manually add the chain, resource type and value to the reference parameters by parsing the sent attribute in the RequestDetails parameter, as it is automatically not handled. Due to these two major issues, Ian and I decided to implement this functionality by adding an explicit @OptionalParam field for every parameter in the resource providers.</li>
+<li style="padding: 10px 0px;"><b>Ensure search returns distinct results:</b>
+<br /><br />
+While working on the issue to get only distinct search results, I tried to change the criteria query in the paging structure to get only unique UUIDs of the matching resources. I changed the query to return distinct UUIDs, but I figured out that the distinct keyword does not work together along with sorting. The next thing I tried was to instead use group by UUID, but that also seemed to be problematic as sorting parameters would have to be added to the group-by list in some cases, making it very inconvenient. 
+
+<br /><br />
+I solved the problem by keeping the query in a DetachedCriteria object (as a SubQuery) and separating the grouping by UUID from sorting. This way they would not impact each other's functionality and the main query could then select UUIDs from this subquery and group by UUID as well to eliminate duplicate results.
+</li>
+</ul><br/>
+
+<br /> 
+<h2><b> Tickets worked on during Week 4</b></h2>
+I worked on three issues and the JIRA tickets for them are as follows:
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-228" style="color:black">Improve Search for Practitioner resource (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-234" style="color:black">Ensure search returns unique results (Status: Code Review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-169" style="color:black">Add search for _id and _lastUpdated (Status: In Progress)</a></li>
+</u></ul><br/>
+
+<h2><b> Plan for Week 5</b></h2>
+The tasks for next week include incorporating any comments on the distinct search results PR and completing the changes for adding functionality for the common search parameters. I'll also start working on implementing advanced parameters like _include and will create the JIRA tickets for the same on the go. For now, I have created a main ticket for _include and will keep on adding sub-tickets to it. The JIRA tickets for issues I'll work on are:
+<br /> <br />
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-169" style="color:black">Complete the functionality for searching by _id and _lastUpdated</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-246" style="color:black">Add search to include partOf with Location</a></li>
+</u></ul><br/>
+
+Hope to see you next week!
+
+</div>
