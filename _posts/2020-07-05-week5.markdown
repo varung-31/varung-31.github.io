@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "GSoC 2020 at OpenMRS | Week 5"
+date:   2020-07-05 20:00:00 +0530
+---
+
+<br/>
+
+<img src="/assets/images/week-5.jpeg" style="width:auto; height:250px; position:relative; left:25%;">
+
+<br />
+<div style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6;">
+The fourth week marked the end of the first phase of the coding period for GSoC'20. The student and mentor evaluations were due in the fifth week which commenced on 29th June and ends today i.e. 5th July. The evaluation went very smooth and I made through to the second phase of the coding period. I also got great feedback on my work from my mentor giving me a confidence boost and motivating me to perform even better in the rest of the coding period. <br /> <br />
+
+The week went by pretty quickly with no major blockers in the way. I was able to complete a couple of issues and raised pull requests for the same and are under review. I also started working on implementing the _include search parameter whose main aim is to also return all other resources which are related to a particular resource in the search results. In particular, all resources referenced to by the resource matching the search criteria will be included with it in its  <i><b>contained</b></i> list of resources.
+
+<br /> <br /> <br />
+<h2><b> Challenges Faced</b></h2>
+There were no challenges faced as such, though there is a particular design change I have in mind to support the _include search parameter. <br /><br />
+While figuring out the implementation strategy for _include, I figured out that the only way we are actually accessing the translators is through the SearchQueryBundleProvider and we need to pass _include params to those translators. The way of doing that is to change the design of the SearchQueryBundleProvider and translators a bit to add a parameter for the _include. I am not really sure if this is the only way of dealing with the problem or if there's a neater way. I'll have a discussion with Ian over this in the next week and move on to the implementation.
+
+<br /> <br /> <br />
+<h2><b> Tickets worked on during Week 5</b></h2>
+I worked on three issues and the JIRA tickets for them are as follows:
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-169" style="color:black">Add search for _id and _lastUpdated (Status: Code Review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-181" style="color:black">Refactor AllergyIntoleranceReactionComponent into a translator (Status: Code Review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-245" style="color:black">Add support for _include parameter (Status: In Progress)</a></li>
+</u></ul><br/>
+
+<h2><b> Plan for Week 6</b></h2>
+The tasks for the next week include having the design discussion with Ian on _include and then moving on to the implementation. I'll also start working on implementing _include for Location:partof and will create the JIRA tickets for other issues as and when I pick them. I will also work on adding functionality for create, update and deleet for the Observation resource. The JIRA tickets for issues I'll work on are:
+<br /> <br />
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-219" style="color:black">Add create, update and delete methods for observation</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-245" style="color:black">Add support for _include parameter</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-246" style="color:black">Add search to include partOf with Location</a></li>
+</u></ul><br/>
+
+That's all for now. See you next week :)
+
+</div>

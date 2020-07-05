@@ -35,7 +35,7 @@ I solved the problem by keeping the query in a DetachedCriteria object (as a Sub
 I worked on three issues and the JIRA tickets for them are as follows:
 <ul style="font-size: 19px;"><u>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-228" style="color:black">Improve Search for Practitioner resource (Status: Merged)</a></li>
-<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-234" style="color:black">Ensure search returns unique results (Status: Code Review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-234" style="color:black">Ensure search returns unique results (Status: Merged)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-169" style="color:black">Add search for _id and _lastUpdated (Status: In Progress)</a></li>
 </u></ul><br/>
 
