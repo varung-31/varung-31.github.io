@@ -6,7 +6,7 @@ date:   2020-07-05 20:00:00 +0530
 
 <br/>
 
-<img src="/assets/images/week-5.jpeg" style="width:auto; height:250px; position:relative; left:25%;">
+<img src="/assets/images/week-5.jpeg" style="width:auto; height:250px; position:relative; left:30%;">
 
 <br />
 <div style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6;">
@@ -23,8 +23,8 @@ While figuring out the implementation strategy for _include, I figured out that 
 <h2><b> Tickets worked on during Week 5</b></h2>
 I worked on three issues and the JIRA tickets for them are as follows:
 <ul style="font-size: 19px;"><u>
-<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-169" style="color:black">Add search for _id and _lastUpdated (Status: Code Review)</a></li>
-<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-181" style="color:black">Refactor AllergyIntoleranceReactionComponent into a translator (Status: Code Review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-169" style="color:black">Add search for _id and _lastUpdated (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-181" style="color:black">Refactor AllergyIntoleranceReactionComponent into a translator (Status: Merged)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-245" style="color:black">Add support for _include parameter (Status: In Progress)</a></li>
 </u></ul><br/>
 

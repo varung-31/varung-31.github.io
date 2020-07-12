@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "GSoC 2020 at OpenMRS | Week 6"
+date:   2020-07-12 18:00:00 +0530
+---
+
+<br/>
+
+<img src="/assets/images/week6.png" style="width:auto; height:250px; position:relative; left:25%;">
+
+<br />
+<div style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6;">
+The sixth week of the coding period for GSoC'20 began on 6th July and ends today i.e. 12th July. The week went as expected and there were no major issues faced in the development process. I completed all the work that I had planned for this week. I was able to finalize the approach for implementing _include with the search queries and also completed a couple of tickets on _include for Location and Observation resources. Along with this, I also worked on some tickets in the FHIR module which were not related to my project like adding functionality for create, update, delete methods for Observation resource.
+
+<br /> <br /> <br />
+<h2><b> Tickets worked on during Week 6</b></h2>
+I worked on five issues and the JIRA tickets for them are as follows:
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-219" style="color:black">Add create, update and delete methods for observation (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-250" style="color:black">Add web tests to MedicationRequest resource (Status: Code review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-253" style="color:black">Refactor module to support _include (Status: Code review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-246" style="color:black">Add search for _include using Location:partof (Status: Completed but PR not created yet)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-254" style="color:black">Update Observation resource to support _include (Status: Completed but PR not created yet)</a></li>
+</u></ul><br/>
+
+<h2><b> Plan for Week 7</b></h2>
+The tasks for the next week include implementing _include for resources which have references associated with them. For now, I have created these four tickets to work on but will create JIRA tickets for other issues as and when I pick them. I aim to finish the _include implementation for most resources by the end of week 7. The JIRA tickets for issues I'll work on are:
+<br /> <br />
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-255" style="color:black">Update AllergyIntolerance resource to support _include</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-256" style="color:black">Update Condition resource to support _include</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-257" style="color:black">Update DiagnosticReport resource to support _include</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-258" style="color:black">Update Encounter resource to support _include</a></li>
+
+</u></ul><br/>
+
+Hoping for another great week ahead!
+
+</div>
