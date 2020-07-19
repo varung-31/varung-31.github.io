@@ -17,8 +17,8 @@ The sixth week of the coding period for GSoC'20 began on 6th July and ends today
 I worked on five issues and the JIRA tickets for them are as follows:
 <ul style="font-size: 19px;"><u>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-219" style="color:black">Add create, update and delete methods for observation (Status: Merged)</a></li>
-<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-250" style="color:black">Add web tests to MedicationRequest resource (Status: Code review)</a></li>
-<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-253" style="color:black">Refactor module to support _include (Status: Code review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-250" style="color:black">Add web tests to MedicationRequest resource (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-253" style="color:black">Refactor module to support _include (Status: Merged)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-246" style="color:black">Add search for _include using Location:partof (Status: Completed but PR not created yet)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-254" style="color:black">Update Observation resource to support _include (Status: Completed but PR not created yet)</a></li>
 </u></ul><br/>

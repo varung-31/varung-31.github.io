@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "GSoC 2020 at OpenMRS | Week 7"
+date:   2020-07-19 17:00:00 +0530
+---
+
+<br/>
+
+<img src="/assets/images/week7.gif" style="width:auto; height:200px; position:relative; left:25%;">
+
+<br />
+<div style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6;">
+The seventh week of the coding period for GSoC'20 began on 13th July and ends today i.e. 19th July. The week saw considerable progress on the _include feature implementation, with most of the resources supporting it now. There were no major issues faced during the week, apart from just one where some translators in the FHIR v2 module did not have null checks at various places, leading to unexpected <b><i>NullPointerExceptions</i></b >. I picked up this task and resolved the issue by adding null checks at all the vulnerable points in the translators. Also, with the first release of the FHIR module in mind, this was one of the important and critical tasks to be completed. 
+
+<br /> <br /> <br />
+<h2><b> Tickets worked on during Week 7</b></h2>
+Since the FHIR v2 module is going to be released in the next 2 weeks, there are no additional feature commits being done on it for now and will be taken up only after the release. Therefore, my _include pull requests are still not created, though the work is complete for the tickets mentioned. I worked on six issues and the JIRA tickets for them are as follows:
+
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://github.com/openmrs/openmrs-module-fhir2/pull/261" style="color:black">Add null checks to translators (Status: Code Review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-255" style="color:black">Update AllergyIntolerance resource to support _include (Status: Completed but PR not created yet)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-256" style="color:black">Update Condition resource to support _include (Status: Completed but PR not created yet)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-257" style="color:black">Update DiagnosticReport resource to support _include (Status: Completed but PR not created yet)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-258" style="color:black">Update Encounter resource to support _include (Status: Completed but PR not created yet)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-262" style="color:black">Update MedicationRequest to support _include (Status: Completed but PR not created yet)</a></li>
+</u></ul><br/>
+
+<h2><b> Plan for Week 8</b></h2>
+The tasks for the next week include implementing _include for Person, RelatedPerson and ServiceRequest resources. After these, I'll start working on <b><i>_revinclude</i></b> feature implementation, commonly known as reverse include. 
+<br /> <br />
+It is different from _include in the sense that, _revinclude retreives all resources which refer to the searched resource whereas _include retrieves all resources which are referred to by the searched resource. I'll work on refactoring the module to support _revinclude and try to implement a small framework that makes it easier to extend the feature to all resources.
+
+<br /> <br />
+
+The JIRA tickets for issues I'll work on are:
+<br /> <br />
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-264" style="color:black">Update Person resource to support _include</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-265" style="color:black">Update RelatedPerson resource to support _include</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-266" style="color:black">Update ServiceRequest resource to support _include</a></li>
+<li style="padding: 10px 0px;">Refactor module to support _revinclude</li>
+
+</u></ul><br/>
+
+Have a good day! See you next week...
+
+</div>
