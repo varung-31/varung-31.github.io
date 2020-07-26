@@ -17,7 +17,7 @@ The seventh week of the coding period for GSoC'20 began on 13th July and ends to
 Since the FHIR v2 module is going to be released in the next 2 weeks, there are no additional feature commits being done on it for now and will be taken up only after the release. Therefore, my _include pull requests are still not created, though the work is complete for the tickets mentioned. I worked on six issues and the JIRA tickets for them are as follows:
 
 <ul style="font-size: 19px;"><u>
-<li style="padding: 10px 0px;"><a href="https://github.com/openmrs/openmrs-module-fhir2/pull/261" style="color:black">Add null checks to translators (Status: Code Review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://github.com/openmrs/openmrs-module-fhir2/pull/261" style="color:black">Add null checks to translators (Status: Merged)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-255" style="color:black">Update AllergyIntolerance resource to support _include (Status: Completed but PR not created yet)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-256" style="color:black">Update Condition resource to support _include (Status: Completed but PR not created yet)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-257" style="color:black">Update DiagnosticReport resource to support _include (Status: Completed but PR not created yet)</a></li>
