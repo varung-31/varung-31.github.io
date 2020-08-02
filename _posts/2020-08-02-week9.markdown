@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "GSoC 2020 at OpenMRS | Week 9"
+date:   2020-08-02 17:00:00 +0530
+---
+
+<br/>
+
+<img src="/assets/images/week9.webp" style="width:auto; height:265px; position:relative; left:15%;">
+
+<br />
+<div style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6;">
+The ninth week of the coding period for GSoC'20 began on 27th July and ends today i.e. 2nd August. This week also marked the second evaluation period for students and mentors to submit each others' evaluations for the last 4 weeks. I passed the evaluation with appreciation from the mentor along with a small suggestion on how to improve code at particular points. It makes me all the more motivated to keep improving and delivering for the final 4 weeks of the coding period.
+<br /> <br />
+
+As far as the work is concerned, it was a smooth week with no major issues faced. I was able to complete four issues, which included improving search and CRUD operations for some of the resources. The module is in an important phase right now where there is a lot of work needed on refactoring to support integration testing. That is why I had to park the original plan of completing the _revinclude implementation and instead focus on this.
+
+<br /> <br /> <br />
+<h2><b> Tickets worked on during Week 9</b></h2>
+The initial plan for this week was to work on and finish the _revinclude implementation for all resources. But because the release of the FHIR v2 module is near, there were some urgent issues I had to work on which included improving the search for Service Request and fixing the implementation of CRUD methods for all resources, along with some necessary refactoring. 
+I worked on four issues this week including one on _revinclude and the JIRA tickets for them are as follows:
+
+<br />
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-238" style="color:black">Add search parameter for ServiceRequest (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-277" style="color:black">Fix create and update methods for R3 (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-278" style="color:black">Add search for DiagnosticReport.result  (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-271" style="color:black">Update Encounter resource to support _revinclude (Status: Completed but PR not created yet)</a></li>
+</u></ul><br/>
+
+<h2><b> Plan for Week 10</b></h2>
+The tasks for the next week include implementing _revinclude for all the remanining resources and I hope to finish it by the end of the week. I will also have a conversation with my mentor, Ian Bacher, on what would be the next task for me for the remaning part of the coding period and I'll create tickets for that as and when I pick it up. Most probably, it should be writing integration tests for some of the resources, but I'll bring clarity on the exact task. For now, the JIRA tickets for the issues I'll work on are:
+
+<br />
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-272" style="color:black">Update Medication resource to support _revinclude</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-273" style="color:black">Update Observation resource to support _revinclude</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-274" style="color:black">Update Practitioner resource to support _revinclude</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-275" style="color:black">Update Patient resource to support _revinclude</a></li>
+</u></ul><br/>
+
+Have a good day! See you next week...
+</div>

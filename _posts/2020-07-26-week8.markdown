@@ -23,7 +23,7 @@ Since the FHIR v2 module is going to be released soon, there are no additional f
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-265" style="color:black">Update RelatedPerson resource to support _include (Status: Completed but PR not created yet)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-266" style="color:black">Update ServiceRequest resource to support _include (Status: Completed but PR not created yet)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-270" style="color:black">Update Location resource to support _revinclude (Status: Completed but PR not created yet)</a></li>
-<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-267" style="color:black">Add create, update and delete methods for ProcedureRequest (Status: Code Review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-267" style="color:black">Add create, update and delete methods for ProcedureRequest (Status: Merged)</a></li>
 </u></ul><br/>
 
 <h2><b> Plan for Week 9</b></h2>
