@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "GSoC 2020 at OpenMRS | Week 11"
+date:   2020-08-16 17:00:00 +0530
+---
+
+<br/>
+
+<img src="/assets/images/week11.png" style="width:auto; height:265px; position:relative; left:25%;">
+
+<br />
+<div style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6;">
+The eleventh week of the coding period for GSoC'20 began on 10th August and ends today, i.e. 16th August. The week was a little tough as compared to the previous few weeks, particularly because there were some bugs in the codebase which were only highlighted at the time of writing the integration tests and it took some amount of deep-dive to get to know the root cause. 
+<br /><br />
+I mainly worked on implementing integration tests for Location and AllergyIntolerance along with the refactoring of some of my _include commits. I also figured out inconsistencies in the translators regarding how to deal with null inputs and resolved the same.
+<br /> <br />
+<h2><b> Challenges Faced</b></h2>
+The majority of the challenges faced were in the implementation of resources. There were some fields like <b><i>verificationStatus</i></b> for AllergyIntolerance, which were required for the resource to be marked as a valid resource. There was also a logical error where we were not assigning any UUID while creating a new resource and upon creation, every resource had the <b><i>id</i></b> field as null. It took time to debug the root cause for each of these issues and come to a conclusion (after discussions with my mentor) as to what should be the correct step to mitigate the errors.
+<br /><br />
+Apart from that, there was an issue with the Practitioner User and Provider Reference Translators where the reference was being returned by using the service to get the FHIR resource and then translating that to an OpenMrs object, resulting in a <b><i>TransientPropertyValueException</i></b> while creating a new object given the reference to an already existing Practitioner. The error was resolved by directly returning the OpenMrs object using the Dao layer.
+
+<br /><br />
+<h2><b> Tickets worked on during Week 11</b></h2>
+During the last week, I worked on implementing the integration tests for a couple of resources, namely Location and AllergyIntolerance. I also found some issues in the translators as they were not appropriately returning null or throwing an exception for the <b><i>null</i></b> input. Moreover, I also worked on refactoring some of my commits for _include to bring them in a state where they can be merged to master without any conflicts. But they are still in my local machine and the PR for them can only be created after the initial release of the FHIR v2 Module.
+I worked on three issues this week and the JIRA tickets for them are as follows:
+
+<br /><br /> 
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-286" style="color:black">Add Integration Tests for Location (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://github.com/openmrs/openmrs-module-fhir2/pull/281" style="color:black">Null checks in translators and general improvements (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-283" style="color:black">Add Integration Tests for AllergyIntolerance (Status: Code Review)</a></li>
+</u></ul><br/>
+
+<h2><b> Plan for Week 12</b></h2>
+The next week is essentially the last week of the coding period for GSoC'20, before the student and mentor evaluations begin. I'll look to complete the refactoring of my _include and _revinclude commits so that they can be merged as soon as the module is released. I'll also discuss with my mentor regarding any documentation that has to be done from my side.
+<br /> <br />
+Have a good day! See you next week...
+
+</div>

@@ -29,8 +29,8 @@ I worked on seven issues this week and the JIRA tickets for them are as follows:
 
 <ul style="font-size: 19px;"><u>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-286" style="color:black">Add Integration Tests for Location (Status: In Progress)</a></li>
-<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-288" style="color:black">Add Integration Tests for MedicationRequest (Status: Code Review)</a></li>
-<li style="padding: 10px 0px;"><a href="https://github.com/openmrs/openmrs-module-fhir2/pull/274" style="color:black">Fix DiagnosticReport to return Obs having group members (Status: Code Review)</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-288" style="color:black">Add Integration Tests for MedicationRequest (Status: Merged)</a></li>
+<li style="padding: 10px 0px;"><a href="https://github.com/openmrs/openmrs-module-fhir2/pull/274" style="color:black">Fix DiagnosticReport to return Obs having group members (Status: Merged)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-272" style="color:black">Update Medication resource to support _revinclude (Status: Completed but PR not created yet)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-273" style="color:black">Update Observation resource to support _revinclude (Status: Completed but PR not created yet)</a></li>
 <li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-274" style="color:black">Update Practitioner resource to support _revinclude (Status: Completed but PR not created yet)</a></li>
