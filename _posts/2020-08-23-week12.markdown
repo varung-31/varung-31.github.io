@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "GSoC 2020 at OpenMRS | Week 12"
+date:   2020-08-23 17:00:00 +0530
+---
+
+<br/>
+
+<img src="/assets/images/gsoc-2020.jpg" style="width:auto; height:265px; position:relative; left:15%;">
+
+<br />
+<div style="font-family: medium-content-serif-font, Georgia, Cambria, Times New Roman, Times, serif; font-size:17px; letter-spacing: +0.02em; line-height:1.6;">
+This past week marked the end of the coding period for GSoC'20. The week began on 17th August and ends today i.e. 23rd August. It was a smooth week in terms of work which mainly involved completing the pending tasks and sending them for code reviews. It is also the end of a wonderful three months of learning, developing, and most importantly, growing as a software developer. 
+<br /><br />
+As per the plan for this week, I worked on refactoring my commits for _include and _revinclude with the new changes made to support the integration tests. I was able to complete this with little issues and got my commits for the same merged on a separate include branch, which would be merged into master after the initial release of the FHIR v2 module.
+<br /> <br />
+<h2><b> Challenges Faced</b></h2>
+There was just one small challenge that I really faced this week. It was related to the way in which Provider and User instances were being coupled to return the Practitioner resources. According to the initial implementation, all the resources for Provider and User were concatenated and being returned in a <b><i>SimpleBundleProvider</i></b>. 
+<br /> <br />
+But this solution would fail if we were to include related resources as well. This is because the related resources for every resource matching the search criteria should be returned on the same page as the matched resource. If all the resources (matched as well as the included) were returned as a single bundle, there would not be a guarantee that the above situation would always happen.
+<br /> <br />
+This problem was resolved by implementing a <b><i>TwoSearchQueryBundleProvider</i></b>, which took the two bundle providers, in this case the Provider and the User bundle and returned the resources in the correct order, taking care of the fact that the matched resource and its related resource should be returned on the same page.
+<br /><br />
+
+<h2><b> Tickets worked on during Week 12</b></h2>
+No new tickets were created or worked upon this week. The work mostly revolved around tickets which were created and partially worked on in the previous weeks of the coding period. The tickets were on implementation of _include and _revinclude features for the search functionality. The master tickets for these are shared below:
+<ul style="font-size: 19px;"><u>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-245" style="color:black">Implementation of the _include feature for search</a></li>
+<li style="padding: 10px 0px;"><a href="https://issues.openmrs.org/browse/FM2-269" style="color:black">Implementation of the _revinclude feature for search</a></li>
+</u></ul>
+The tickets are still in the <i><b>In Progress</b></i> state because they have been merged to a separate include branch and will be closed only after they are merged to master.
+
+<br /><br />
+<h2><b> Plan for the Future</b></h2>
+The next week is all about submitting the documentation regarding the project like updating the project wiki, preparing a video about the project and submission of the mentor evaluation. 
+<br /><br />
+Overall, it has been a great journey for the last few months. From selecting the organization, getting the first Pull Request merged, to getting selected for GSoC and then working extensively on the chosen project, it has certainly been one great ride. All of these were accompanied by a great community interaction and not to forget the endless support of my mentor, Ian Bacher. 
+<br /> <br />
+I certainly feel I have grown a lot in these months and I am thankful to everyone who has helped me in the process. I have liked contributing to the OpenMRS codebase, and sort of developed a sense of responsibility towards the same. I hope to stay active in the community even after the program ends and look forward to a lot more contributions!
+<br /><br />
+
+Have a great week! And...I am not going away anytime soon. Ciao for now!
+</div>
